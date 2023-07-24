@@ -29,18 +29,20 @@
                         'dark-02': '#414040',
                         'dark-03': '#707070',
                         'dark-05': '#CFCFCF',
+                        'dark-06': '#E7E7E7',
                         'dark-07': '#F3F3F3',
                     }
                 }
             }
         }
     </script>
-    <!-- To custom css here -->
+    <!-- To custom css  -->
     <style>
-        .font-poppins{
+        .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
-        .font-garamond{
+
+        .font-garamond {
             font-family: 'EB Garamond', serif;
         }
     </style>
@@ -48,9 +50,113 @@
 
 <body class="font-poppins">
     <header>
-        
+        <!-- navbar start here -->
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center items center">
+                        <img src="./images/logo2.png" alt="" class="w-full">
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base font-normal">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-bg-color rounded-lg text-sm md:text-lg capitalize text-white font-extrabold">Free
+                        Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+
+        <!-- banner section start here  -->
+        <section class="bg-[url('./images/banner.png')] bg-no-repeat bg-center bg-cover h-[550px]">
+            <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+                <div class="mx-auto max-w-2xl text-center text-white">
+                    <h2 class="text-2xl font-extrabold font-garamond lg:text-7xl md:text-3xl">
+                        We Provide Effective Legal Solutions
+                    </h2>
+
+                    <p class="hidden text-base font-normal text-dark-06 sm:mt-4 sm:block">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.
+                    </p>
+                </div>
+
+                <div class="mx-auto mt-8 max-w-xl">
+                    <form action="#" class="sm:flex sm:gap-4">
+                        <div class="sm:flex-1">
+                            <label for="email" class="sr-only">Email</label>
+
+                            <input type="message" placeholder="Search your Services"
+                                class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring" />
+                        </div>
+
+                        <button type="submit"
+                            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-rose-600 px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto border-none">
+                            <span class="text-xl font-semibold"> Search </span>
+
+                            <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- banner section ends here  -->
     </header>
-    <main></main>
+    <main>
+        <!-- Legal practise section start here -->
+        <section>
+            <div class="space-y-5 mt-14 mb-8 text-center">
+                <h2 class="font-garamond text-4xl font-extrabold text-dark-02 max-w-sm mx-auto">The Legal Practice Area
+                </h2>
+                <p class="max-w-[714px] mx-auto font-base font-poppins">There are many variations of passages of Lorem
+                    Ipsum
+                    available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/logo.png" alt="Business law"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="">Business Law</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="card-actions">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
